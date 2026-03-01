@@ -5,60 +5,63 @@ body {
     color: #333;
 }
 
-header {
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.sidebar {
+    width: 30%;
     background: #1f2937;
     color: white;
-    padding: 40px 20px;
-    text-align: center;
+    padding: 30px;
 }
 
-nav {
-    background: #111827;
-    padding: 10px;
-    text-align: center;
+.sidebar h2 {
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+    margin-top: 30px;
 }
 
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
+.sidebar ul {
+    padding-left: 20px;
 }
 
-nav a:hover {
-    color: #60a5fa;
+.content {
+    width: 70%;
+    padding: 40px;
+    background: white;
 }
 
-section {
-    max-width: 900px;
-    margin: 40px auto;
+header h1 {
+    margin: 0;
+}
+
+.card {
+    background: #f3f4f6;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.projekty {
+    max-width: 1200px;
+    margin: 60px auto;
     padding: 0 20px;
 }
 
-h2 {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
 }
 
-.card, .project {
+.project {
     background: white;
     padding: 20px;
-    margin: 20px 0;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.skills {
-    list-style: none;
-    padding: 0;
-}
-
-.skills li {
-    display: inline-block;
-    background: #e5e7eb;
-    padding: 8px 15px;
-    margin: 5px;
-    border-radius: 20px;
 }
 
 .project a {
@@ -69,25 +72,17 @@ h2 {
     font-weight: bold;
 }
 
-.project img {
-    width: 100%;
-    max-height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
+.project a:hover {
+    text-decoration: underline;
 }
 
-.back-btn {
-    display: inline-block;
-    margin-top: 15px;
-    color: #60a5fa;
-    text-decoration: none;
-    font-weight: bold;
-}
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #1f2937;
-    color: white;
+    .sidebar,
+    .content {
+        width: 100%;
+    }
 }
