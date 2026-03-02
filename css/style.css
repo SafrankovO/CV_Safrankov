@@ -98,6 +98,20 @@ h2 {
     font-weight: bold;
 }
 
+.edu-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+}
+
+.edu-date {
+    color: #666;
+    font-weight: 500;
+}
+
 /* RESPONSIVE */
 @media (max-width: 1000px) {
     .main-grid {
