@@ -7,15 +7,37 @@ body {
 
 /* HEADER */
 .top-header {
-    text-align: center;
-    padding: 60px 20px 40px;
-    background: white;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+    gap: 40px;
+    padding: 0 20px;
+    
 }
-
+.top-header-main{
+    display: flex;
+    align-items: center;
+     flex-direction: column;   /* ustawia 1 nad 2 */
+    align-items: center; 
+    justify-content: center; 
+    
+    
+}
 .top-header h1 {
     margin: 0;
     font-size: 40px;
+}
+.top-header h2 {
+    display: flex;
+    align-items: center;
+    align-self: left;
+    margin: 0;
+    font-size: 30px;
+    align-self: left;
+    justify-items: center;
 }
 
 .top-header p {
