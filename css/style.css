@@ -169,7 +169,15 @@ h2 {
 }
 
 
-
+.project-category {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #2563eb;
+    text-align: left;
+    border-left: 4px solid #2563eb;
+    padding-left: 10px;
+}
 
 
 .project-with-video {
@@ -232,4 +240,23 @@ h2 {
 .project-3d iframe {
     max-width: 100%;
     border-radius: 10px;
+}
+
+.pdf-viewer{
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.pdf-slider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin-top:30px;
+}
+
+.pdf-slider iframe{
+    border:1px solid #ccc;
+    border-radius:8px;
 }
